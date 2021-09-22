@@ -1,0 +1,30 @@
+#container {
+    display: flex;  
+    flex-flow:row flex-start;  /* de où le flex commence */
+    justify-content:center; /* où le flex est justifié (droite gauche... l'espace entre...*/
+    align-items: center; /*Comment on aligne de haut en bas*/
+    
+
+    background-color: brown;
+}
+
+#container2 {
+    display: flex;
+    flex-direction:column; 
+}
+/*
+#container img{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-self:right;
+}
+*/
+#container div {
+    /*background-color: darkkhaki;*/
+    padding: 5px;
+    border-radius: 5px;
+    flex-basis: auto; /* part de la page que les divs prennent*/
+
+    /*height: 25px;*/
+
+}

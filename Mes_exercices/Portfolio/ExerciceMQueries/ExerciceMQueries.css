@@ -1,0 +1,66 @@
+html, body {
+    margin:0px;
+}
+
+
+.container1 {
+    display:flex;
+    flex-direction: column;
+}
+
+.titre {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(125, 204, 204);
+}
+
+.liens {
+    display:flex;
+    background-color: firebrick;
+    height: 30px;
+}
+
+a {
+    padding:10px;
+    text-decoration: none;
+}
+
+img {
+    background-color: darkviolet;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#maison {
+    max-width: 200px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.propos {
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(10, 95, 97);
+    flex-basis: 20%;
+    
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: grey;
+}
+
+

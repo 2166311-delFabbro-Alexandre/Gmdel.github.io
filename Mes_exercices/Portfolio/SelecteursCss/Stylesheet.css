@@ -1,0 +1,27 @@
+H1#titrePage {
+		color:red;
+		font-size:300%;
+		text-align:center;
+		}
+
+.paragraphe::first-letter {
+		font-size:200%;
+		font-style:italic;
+		}
+
+.paragraphe {
+		text-align:justify;
+		}
+
+#paragraphe1::first-letter {
+		color:purple;
+		}
+
+p:not(#paragraphe1)::first-letter {
+		color:green;
+		}
+
+h2.titre:hover {
+		color:blue;
+		}
+				
