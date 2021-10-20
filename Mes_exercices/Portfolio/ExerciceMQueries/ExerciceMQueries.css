@@ -17,14 +17,24 @@ html, body {
 
 .liens {
     display:flex;
-    background-color: firebrick;
-    height: 30px;
+    background-color: rgb(243, 38, 38);
+    padding: 10px;
 }
 
-a {
-    padding:10px;
+.liens a {
+    padding: 10px;
     text-decoration: none;
+    color:rgb(209, 221, 41)
 }
+
+.liens a:hover {
+    background-color: blueviolet;
+    color: rgb(122, 177, 179);
+    transition-property: all;
+    transition-duration: 800ms;
+    transition-timing-function: ease-in-out;   
+}
+
 
 img {
     background-color: darkviolet;
@@ -34,6 +44,29 @@ img {
 
 #maison {
     max-width: 200px;
+}
+
+#maison:hover {
+    transition-property: all;
+    transition-duration: 700ms;
+    transform: skew(-50deg);
+}
+
+#laveuse {
+    max-height: 400px;
+}
+
+#laveuse:hover {
+    transition-property: all;
+    transition-duration: 100s;
+    transform: rotate(100080deg);
+}
+
+#ulysse:hover {
+    transition-property: all;
+    transition-duration: 7s;
+    transform: scale(6);
+
 }
 
 .container3 {

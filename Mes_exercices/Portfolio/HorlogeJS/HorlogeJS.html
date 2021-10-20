@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/HorlogeJS.css">
+
+    
+    <link rel="stylesheet" href="CSS/css/fontawesome.css">
+    <link rel="stylesheet" href="CSS/css/solid.css">
+
+    <script defer src="JS/HorlogeJS.js"></script>
+    
+    <title>Horloge en javascript</title>
+</head>
+
+<body>
+    
+    <div id="settings">
+        <div class="tooltip tooltip_24H">
+            <i id="icone_24H" class="fas fa-atom" onclick="changer24H(this)"></i>
+            <span class = "tooltiptext">24H</span>
+        </div>
+        
+        <div class="tooltip tooltip_masquerDate">
+            <i id="icone_masquerDate" class="fas fa-anchor" onclick="masquerDate(this)"></i>
+            <span class = "tooltiptext">Masquer date</span>
+        </div>
+    </div>
+
+    <div id="date"></div>
+    <div id="clock"></div>
+
+    
+
+</body>
+
+
+</html>
