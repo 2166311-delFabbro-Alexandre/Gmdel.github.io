@@ -1,0 +1,29 @@
+#main_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+#options{
+    flex-basis: 25%;
+}
+
+#colonne_resultat{
+    flex-basis: 75%;
+    height: 400px;
+    background-color: blanchedalmond;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+}
+
+.cube{
+    color: coral;
+    background-color: darkblue;
+    height: 80px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin:5px;
+}
+

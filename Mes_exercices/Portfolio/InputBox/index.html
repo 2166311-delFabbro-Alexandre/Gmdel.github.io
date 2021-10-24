@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Flexbox Cheatsheet</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <div id="main_container">
+
+        <div id="options">
+            Nb boites
+            <input id="input_number" type="number" min="1" max="10" value="4">
+            <br>
+            Valeur
+            <select id="select_valeur">
+                <option value="flex-start">flex-start</option>
+                <option value="flex-end">flex-end</option>
+                <option value="center">center</option>
+                <option value="space-between">space-between</option>
+                <option value="space-around">space-around</option>
+                <option value="space-evenly">space-evenly</option>
+            </select>
+            <br>
+            <button id="generer" onclick="GenererCube(this)">Générer</button>
+        </div>
+
+        <div id="colonne_resultat">
+            <div id="resultat"></div>
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
+
+
+
+<!---Ce qu'il faut faire
+
+Cliquer bouton
+-supprimer cubes
+-récupérer les valeurs des inputs
+-créer les cubes
+    -boucle de 1 à x
+    -créer cubes  (cubes ont numéros)
+    -appliquer propriété
+    -ajouter dans résultat
+-changer justify-content

@@ -1,3 +1,5 @@
+let affichage12H = true;
+
 function horlogeJS() {
 
 //récupérer date et heure dans une variable
@@ -12,9 +14,15 @@ let date = dateActuel.getDate();
 let mois = dateActuel.getMonth()+1;
 let annee = dateActuel.getFullYear();
 let ampm = (dateActuel.getHours() >= 12) ? "PM" : "AM";
+if(!affichage12H){
+    ampm = "";
+}
 
 //définir les variables
-heure = amPM(heure);
+if(affichage12H) {
+    heure = amPM(heure);
+}
+
 heure = updateTime(heure);
 minute = updateTime(minute);
 seconde = updateTime(seconde);
@@ -45,19 +53,20 @@ function amPM(m) {
     else if (m > 12) {
         return m - 12;
     }
-    else {
+    else{
         return m;
     }
 }
 
-function onOff1() {
-    var onOff = document.getElementById("btn1");
-    onOff.classList.toggle("btn1");
+function masquerDate(icone) {
+    icone.classList.toggle("selected")
+    document.getElementById("date").classList.toggle("hide");
  }
 
- function onOff2() {
-    var onOff = document.getElementById("btn2");
-    onOff.classList.toggle("btn2");
+ function changer24H(icone) {
+    icone.classList.toggle("selected");
+    affichage12H = !affichage12H;
+    horlogeJS;
  }
 
 horlogeJS();
